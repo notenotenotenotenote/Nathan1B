@@ -1,0 +1,86 @@
+body {
+    color: whitesmoke;
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    border-bottom: solid rgb(88, 22, 22);
+    font-size: 25px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.destaque {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+    padding: 10px;
+    background-color: rgb(22, 1, 1);
+}
+
+.destaque-item {
+    flex: 0 0 auto; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px; 
+}
+
+.destaque-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: lightgray;
+}
+
+
+.destaque::-webkit-scrollbar {
+    height: 8px;
+}
+
+.destaque::-webkit-scrollbar-thumb {
+    background-color: rgb(88, 22, 22);
+    border-radius: 10px;
+}
+
+.destaque::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+h2{
+    text-align: center;
+}
+.video-section {
+    display: flex;
+    gap: 20px; /* Espaçamento horizontal entre os vídeos */
+    overflow-x: auto; /* Habilita o rolamento horizontal */
+    padding: 10px;
+    white-space: nowrap; /* Impede que os vídeos quebrem para outra linha */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo opcional para destaque */
+}
+
+.video-section iframe {
+    flex: 0 0 auto; /* Garante que os vídeos mantenham sua largura */
+    border-radius: 10px; /* Bordas arredondadas nos vídeos (opcional) */
+}
+
+/* Estilização da barra de rolagem (opcional) */
+.video-section::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem horizontal */
+}
+
+.video-section::-webkit-scrollbar-thumb {
+    background-color: rgb(88, 22, 22); /* Cor da barra de rolagem */
+    border-radius: 10px;
+}
+
+.video-section::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo da barra de rolagem */
+}
